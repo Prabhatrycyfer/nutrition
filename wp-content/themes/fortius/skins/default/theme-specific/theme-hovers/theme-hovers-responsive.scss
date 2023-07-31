@@ -1,0 +1,31 @@
+@import "../../../../css/_mixins.scss";
+@import "../../../../css/_theme-vars.scss";
+@import "../../css/_skin-vars.scss";
+
+
+//@mixin theme--md() {
+@media #{$media_md} {
+	.post_featured.hover_info .post_info .post_descr {
+		.post_meta {
+			.post_meta_item.post_sponsored,
+			.post_meta_item.post_categories {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+//@mixin theme-hovers--xs() {
+@media #{$media_xs} {
+	/* Theme Hovers */
+	.post_featured.hover_border .post_info .post_info_back	{
+		padding: 2.5em;
+	}
+	.post_featured.hover_border .post_info:before,
+	.post_featured.hover_border .post_info:after {
+		@include abs-pos(20px, 20px, 20px, 20px);
+	}
+	.post_featured.hover_border .post_info .post_title {
+		padding-bottom: 4px;
+	}
+}
